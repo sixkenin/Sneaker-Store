@@ -1,60 +1,53 @@
- body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
+    body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            padding: 0;
+        }
 
-    header {
-        background-color: #333;
-        color: white;
-        padding: 10px;
-        text-align: center;
-    }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
 
-    header h1 {
-        margin: 0;
-        float: left;
-    }
+        nav ul {
+            list-style: none;
+        }
 
-    header p {
-        margin: 0;
-        float: left;
-        padding-left: 20px;
-    }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
 
-    header h2 {
-        display: none; /* hide the "Menu" h2 for now */
-    }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
 
-    header ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
+        .sneaker-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
 
-    header li {
-        float: left;
-    }
+        .sneaker {
+            text-align: center;
+        }
 
-    header a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
+        .sneaker img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
 
-section img {
-    max-width: 100%;
-    height: auto;
-}
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
