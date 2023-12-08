@@ -101,4 +101,48 @@ header {
             bottom: 0;
             width: 100%;
         }
+  .contact-title {
+            text-align: center;
+            background-color: #F5F5F5;
+            padding: 1px;
+        }
+.contactfaq {
+    text-align: center;
 
+}
+.blocfaq {
+    margin: 20px;
+    background-color: #F5F5F5;
+}
+
+#contact {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  contact-details {
+    flex: 1; /* Datele de contact să ocupe spațiul disponibil */
+  }
+  form {
+    flex: 1; /* Formularul să ocupe spațiul disponibil */
+    margin-right: 20px; /* Spațiere între formular și datele de contact */
+  }
+
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
