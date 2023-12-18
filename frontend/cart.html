@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - Sneaker Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="cart.js"></script>
+
+    <div class="Newsletter-section">
+        <p>
+            <ul>
+                <li>
+                    <img src="images/carticon.png" width="17">
+                    <b> MY SHOPPING CART</b>
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="Sectiune">
+        <p>
+            <nav>
+                <ul>
+                    <li>
+                        <img src="images/deliverycar.png" width="33">
+                        <b> Livrare gratuită la comenzile de peste 200 RON </b>
+                    </li>
+                    <li> 
+                        <img src="images/gmaillogo.png" width="27">
+                        <a href="contact.html"> <b> <u> CONTACT </u> </b> </a>
+                    </li>
+                    <li>
+                        <img src="images/faq1.png" width="15">
+                        <a href="faq.html">
+                            <b> <u> ÎNTREBĂRI FRECVENTE </u> </b>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </p>
+    </div>
+
+    <header>
+        <div class="header-top-right">
+            <ul>
+           <li>
+               <a href="profile.html">
+                   <img src="images/profilepic.png" alt="profile" width="33">
+               </a>
+           </li>
+           
+           <li> <a href="cart.html">
+                   <img src="images/cart.png" alt="mycart" width="33">
+               </a>
+           </li>
+           
+                <li><a href="favorites.html">
+                   <img src="images/favorites.png" alt="favorites" width="30">
+                </a></li>
+                </ul>
+           </div>
+
+        <a href="index.html">
+            <img src="images/logo.png" alt="Logo" width="150">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cart-details">
+        <div class="cart-summary">
+            <h2>Order Summary</h2>
+            <ul>
+                <li>
+                    <span>Numele produsului: -</span>
+                    <span>Cantitate: -</span>
+                    <span>Pret: RON </span>
+                </li>
+            </ul>
+            <p>Total: RON </p>
+            <button id="checkout">Checkout</button>
+        </div>
+
+        <div class="recommended-products">
+            <h2>Recommended Products</h2>
+            <div class="sneaker">
+                <img src="" alt="-" width="300">
+                <p><b>Brand</b></p>
+                <p>Product Name</p>
+                <p><b>RON Price</b></p>
+                <button onclick="addToCart(recommendedProductId)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 SICK.RO. All rights reserved.</p>
+    </footer>
+</body>
+</html>

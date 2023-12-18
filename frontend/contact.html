@@ -6,6 +6,8 @@
     <title>faq</title>
   </head>
   <body>
+    <script src="index.js"></script>
+
     <div class="Newsletter-section">
         <p>
             <ul>
@@ -44,23 +46,23 @@
         </div>
     <header>
         <div class="header-top-right">
-      <ul>
-     <li>
-         <a href="/profile">
-             <img src="images/profilepic.png" alt="profile" width="33">
-         </a>
-     </li>
-     
-     <li> <a href="/cart">
-             <img src="images/cart.png" alt="mycart" width="33">
-         </a>
-     </li>
-     
-          <li><a href="/favorites">
-             <img src="images/favorites.png" alt="favorites" width="30">
-          </a></li>
-          </ul>
-     </div>
+            <ul>
+           <li>
+               <a href="profile.html">
+                   <img src="images/profilepic.png" alt="profile" width="33">
+               </a>
+           </li>
+           
+           <li> <a href="cart.html">
+                   <img src="images/cart.png" alt="mycart" width="33">
+               </a>
+           </li>
+           
+                <li><a href="favorites.html">
+                   <img src="images/favorites.png" alt="favorites" width="30">
+                </a></li>
+                </ul>
+           </div>
      
       <a href="index.html">
          <img src="images/logo.png" alt="Logo" width="150">
@@ -81,20 +83,21 @@
      <section id="contact">
         <h2>Contactează-ne</h2>
         <p>Pentru întrebări sau asistență, nu ezita să ne contactezi.</p>
-  
-        <form action="proceseaza_formular.php" method="post">
-          <label for="nume">Nume:</label>
-          <input type="text" id="nume" name="nume" required>
-  
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-  
-          <label for="mesaj">Mesaj:</label>
-          <input id="mesaj" name="mesaj" rows="4" required></input>
-  
-          <button type="submit">Trimite</button>
+      
+        <form id="contactForm">
+            <label for="nume">Nume:</label>
+            <input type="text" id="nume" name="nume" required>
+      
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="mesaj">Mesaj:</label>
+            <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
+      
+            <button type="button" onclick="submitForm()">Trimite</button><br>
+            <label id="confirmSubmit"></label>
         </form>
-      </section>
+    </section>
       <div class="contact-info">
         <h2>Informații de Contact</h2>
         <p>Număr de telefon: +40 733 863 224</p>
