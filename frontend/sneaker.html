@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Men - Sick.ro</title>
+    <title>Sneaker Details - Sick.ro</title>
     <link rel="stylesheet" href="style.css">
+    <script src="sneaker.js" defer></script>
 </head>
 <body>
     <div class="Newsletter-section">
@@ -76,45 +77,44 @@
                 <li><a href="kids.html">Kids</a></li>
             </ul>
         </nav>
-        
         </header>
-        <div class="section-heading">
-            <img src="images/women.png" alt="women" width="450">
+        
+    <div class="sneaker-details-container">
+        <div class="sneaker-details">
+            <img id="sneaker-image" src="images/amiriredma1.png" alt="Sneaker Image">
+            <div class="sneaker-info">
+                <h2 id="sneaker-brand">-sneaker brand-</h2>
+                <p id="sneaker-name">-sneaker model-</p>
+                <p id="sneaker-description">
+                    -details-
+                </p>
+                <p id="sneaker-price"><b>RON 0.00</b></p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="1" value="1">
+                <button id="add-to-cart-btn">Add to Cart</button>
+                <button id="favorite-btn">Add to Favorites</button>
+                <label for="size">Select Size:</label>
+                <select id="size">
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    <option value="45">45</option>
+                    <option value="46">46</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+            </div>
         </div>
-   <main>
-    <section class="sneaker-container">
-        <div class="sneaker">
-            <a href="sneaker.html">
-                <img src="images/visionaire.png" alt="Jordan 1 High Visionaire" width="300">
-            </a>
-            <p><b>AIR JORDAN</b></p>
-            <p>Jordan 1 High Visionaire</p>
-            <p><b>RON 650.00</b></p>
-        </div>
-    
-        <div class="sneaker">
-            <a href="sneaker.html">
-                <img src="images/jordansatinbred.png" alt="Jordan 1 Satin Bred" width="300">
-            </a>
-            <p><b>AIR JORDAN</b></p>
-            <p>Jordan 1 High Satin Bred</p>
-            <p><b>RON 750.00</b></p>
-        </div>
-    
-        <div class="sneaker">
-            <a href="sneaker.html">
-                <img src="images/dunkriftbluegs.png" alt="Dunk Low Rift Blue" width="300">
-            </a>
-            <p><b>NIKE</b></p>
-            <p>Dunk Low Rift Blue (GS)</p>
-            <p><b>RON 350.00</b></p>
-        </div>
-    
-    </section>
+    </div>
 
-    </main>
     <footer>
         <p>&copy; 2023 SICK.RO. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
