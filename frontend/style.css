@@ -85,6 +85,7 @@ header {
 
         .sneaker {
             text-align: center;
+            position: relative;
         }
 
         .sneaker img {
@@ -143,11 +144,11 @@ header {
     gap: 10px;
   }
   contact-details {
-    flex: 1; /* Datele de contact să ocupe spațiul disponibil */
+    flex: 1; 
   }
   form {
-    flex: 1; /* Formularul să ocupe spațiul disponibil */
-    margin-right: 20px; /* Spațiere între formular și datele de contact */
+    flex: 1;
+    margin-right: 20px; 
   }
 
   button {
@@ -213,3 +214,17 @@ body {
 #sneaker-description {
     margin-bottom: 20px;
 }
+
+.sneaker img:hover{
+    opacity: 1;
+}
+
+.image-hover {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity 1s ease-in-out;
+  }
