@@ -12,12 +12,11 @@ document.getElementById("add-to-cart-btn").onclick=function()
 
 
 function loadProduct() {
-    loadImage("images/amiricourt.png");
-    loadBrand("Amiri"); 
-    loadName("Court");
-    loadDescription("Comfortable and stylish sneakers for everyday wear.");
-    loadPrice("RON 1999.99"); 
-    loadSizeOptions();
+    document.getElementById('sneaker-image').src = sneaker.image;
+    document.getElementById('sneaker-brand').textContent = sneaker.brand;
+    document.getElementById('sneaker-name').textContent = sneaker.name;
+    document.getElementById('sneaker-description').textContent = sneaker.description;
+    document.getElementById('sneaker-price').innerHTML = `<b>RON ${sneaker.price.toFixed(2)}</b>`;
 }
 
 function loadImage(photo)
